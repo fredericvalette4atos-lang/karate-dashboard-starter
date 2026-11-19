@@ -1,0 +1,45 @@
+[
+  {
+    "scenarioName": "Login Test - gültige Zugangsdaten",
+    "status": "PASSED",
+    "duration": 1200,
+    "timestamp": "2024-05-20T10:00:00Z",
+    "steps": [
+      { "name": "Given url 'https://api.example.com/login'", "status": "PASSED" },
+      { "name": "When method post", "status": "PASSED" },
+      { "name": "Then status 200", "status": "PASSED" }
+    ]
+  },
+  {
+    "scenarioName": "Logout Test",
+    "status": "FAILED",
+    "duration": 5000,
+    "timestamp": "2024-05-20T10:00:06Z",
+    "steps": [
+      { "name": "Given url 'https://api.example.com/logout'", "status": "PASSED" },
+      { "name": "When method post", "status": "FAILED" }
+    ],
+    "error": {
+      "message": "Element not found",
+      "stackTrace": "js.Failed: status code was: 404, expected: 200"
+    }
+  },
+  {
+    "scenarioName": "Benutzer anlegen",
+    "status": "PASSED",
+    "duration": 950,
+    "timestamp": "2024-05-20T10:00:12Z"
+  },
+  {
+    "scenarioName": "Benutzer abfragen",
+    "status": "PASSED",
+    "duration": 430,
+    "timestamp": "2024-05-20T10:00:15Z"
+  },
+  {
+    "scenarioName": "Benutzer löschen",
+    "status": "PASSED",
+    "duration": 610,
+    "timestamp": "2024-05-20T10:00:18Z"
+  }
+]
